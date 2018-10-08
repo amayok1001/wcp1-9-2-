@@ -14,14 +14,17 @@
 main {
 	width: 960px;
 	margin: 50px auto;
-	margin-bottom: 50px;
 }
 
 .step {
+	width: 32%;
 	border: 1px solid #dfdfdf;
 	display: inline-block;
-
-
+	margin-right: 2%;
+	float: left;
+}
+.step:last-child {
+	margin-right: 0;
 }
 
 .icon {
@@ -33,73 +36,65 @@ main {
 	float: left;
 }
 
+.box {
+	margin: 10px 10px 5px 10px;
+}
+
 
 .photo1 {
-	margin: 10px;
-	width: 290px;
 	height: 150px;
 	background-image: url(img/flow01.png);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 }
 .photo2 {
-	margin: 10px;
-	width: 290px;
 	height: 150px;
 	background-image: url(img/flow02.png);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 }
 .photo3 {
-	margin: 10px;
-	width: 290px;
 	height: 150px;
 	background-image: url(img/flow03.png);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 }
 
 h3 {
 	color: #5f5f5f;
-	margin-left: 15px;
+	margin: 15px 0 5px;
 }
 
 .text {
 	width: 300px;
 	color: #5f5f5f;
-	margin-left: 15px;
 }
 
 /* 768px以下で表示 */
 @media screen and (max-width:768px) {
 	main {
 		width: 90%;
-
 	}
 	.step {
-		display: block;
+		width: 100%;
 		margin-bottom: 20px;
-	
+		float: none;
+		margin-right: 0;
 	}
+	.step:last-child {
+		margin-bottom: 0px;
+	}
+
 
 	.icon {
 		width: 60px;
 		font-size: 20px;
 	}
 	
+	
 	.photo1, .photo2, .photo3 {
-		width: 650px;
-		height: 250px;
+		width: 100%;
 		margin: 15px auto;
-		background-position: bottom;
 	}
-
-	h3 {
-		font-size: 25px;
-	}
-
-	.text {
-		width: 90%;
-		font-size: 23px;
-	}
+	
 }
